@@ -1,6 +1,11 @@
 module.exports = {
   plugins: ['tailwindcss'],
   extends: ['plugin:tailwindcss/recommended'],
+  settings: {
+    tailwindcss: {
+      classRegex: '^classname$',
+    },
+  },
   overrides: [
     {
       // Define the configuration for `.astro` file.
