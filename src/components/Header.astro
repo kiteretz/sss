@@ -1,0 +1,30 @@
+---
+---
+
+<header class="flex justify-between">
+  <p class="p-4 font-bold">Hello</p>
+  <nav>
+    <ul class="flex">
+      {
+        [
+          {
+            label: 'Home',
+            href: '/',
+          },
+          {
+            label: 'About',
+            href: '/about/',
+          },
+        ].map(({ label, href }) => {
+          return (
+            <li>
+              <a href={href} class="block p-4">
+                {label}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </nav>
+</header>
