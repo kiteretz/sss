@@ -19,7 +19,13 @@ import ActiveLink from './ActiveLink.astro';
         ].map(({ label, href }) => {
           return (
             <li>
-              <ActiveLink href={href}>{label}</ActiveLink>
+              <ActiveLink
+                className="block p-4"
+                activeClassName="underline"
+                href={href}
+              >
+                {label}
+              </ActiveLink>
             </li>
           );
         })
