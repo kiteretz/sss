@@ -1,4 +1,4 @@
-# Astro Starter Kit: kiteretz/sss
+# Astro Static Site Starter Kit: kiteretz/sss
 
 ```
 npm create astro@latest -- --template kiteretz/sss
