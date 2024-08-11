@@ -5,5 +5,11 @@ import relativeLinks from 'astro-relative-links';
 // https://astro.build/config
 export default defineConfig({
   scopedStyleStrategy: 'class',
-  integrations: [tailwind(), relativeLinks()],
+  integrations: [
+    tailwind(),
+    relativeLinks(),
+  ],
+  devToolbar: {
+    enabled: false
+  }
 });
